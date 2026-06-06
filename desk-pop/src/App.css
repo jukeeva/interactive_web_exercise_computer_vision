@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: white;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hud {
+  display: flex;
+  gap: 32px;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.stage {
+  position: relative;
+  width: 720px;
+  max-width: 90vw;
+}
+
+.camera,
+.overlay {
+  width: 100%;
+  border-radius: 16px;
+  transform: scaleX(-1);
+}
+
+.camera {
+  border: 2px solid white;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
+
+.start-button {
+  margin-bottom: 20px;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 999px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.start-button:hover {
+  transform: scale(1.05);
+}
